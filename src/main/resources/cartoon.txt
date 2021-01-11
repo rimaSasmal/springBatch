@@ -1,0 +1,20 @@
+101,The Flintstones,CN
+102,Courage the Cowardly Dog,CN
+103,Teen Titans,CN
+104,Johnny Bravo,CN
+105,Scooby-Doo,CN
+106,Dexter's Laboratory,CN
+107,Tom and Jerry,CN
+108,Looney Tunes,POGO
+109,The Powerpuff Girls,CN
+110,Samurai Jack,CN
+111,Pokémon,CN
+112,Popeye the Sailor,CN
+113,Doraemon,HUNGAMA
+114,Shin-chan,HUNGAMA
+115,Captain Planet and the Planeteers,CN
+116,Ed Edd n Eddy,CN
+117,The Addams Family,CN
+118,The Jetsons,CN
+119,The Mask,CN
+120,Ben 10,CN

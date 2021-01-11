@@ -1,9 +1,11 @@
-package com.example.sprigBatch;
+package com.example.springBatch;
 
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableBatchProcessing
 public class SprigBatchApplication {
 
 	public static void main(String[] args) {
