@@ -6,14 +6,14 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CartoonProcessor implements ItemProcessor<CartoonDTO, Cartoon> {
+public class CartoonProcessor implements ItemProcessor<Cartoon, CartoonDTO> {
     @Override
-    public Cartoon process(CartoonDTO cartoonDTO) throws Exception {
-        System.out.println("&&&&&&&&&&&& "+cartoonDTO);
-        Cartoon cartoon=new Cartoon();
-        cartoon.setId(cartoonDTO.getId());
-        cartoon.setChannel(cartoonDTO.getChannel()+" Pro");
-        cartoon.setShowName(cartoonDTO.getShowName());
-        return cartoon;
+    public CartoonDTO process(Cartoon cartoon) throws Exception {
+        System.out.println("&&&&&&&&&&&& "+cartoon);
+        CartoonDTO cartoonDTO=new CartoonDTO();
+        cartoonDTO.setId(cartoon.getId());
+        cartoonDTO.setChannel(cartoon.getChannel()+" Pro");
+        cartoonDTO.setShowName(cartoon.getShowName());
+        return cartoonDTO;
     }
 }

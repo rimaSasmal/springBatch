@@ -1,0 +1,21 @@
+id,show name,channel
+CartoonDTO{id=101, showName='CN', channel='The Flintstones Pro'}
+CartoonDTO{id=102, showName='CN', channel='Courage the Cowardly Dog Pro'}
+CartoonDTO{id=103, showName='CN', channel='Teen Titans Pro'}
+CartoonDTO{id=104, showName='CN', channel='Johnny Bravo Pro'}
+CartoonDTO{id=105, showName='CN', channel='Scooby-Doo Pro'}
+CartoonDTO{id=106, showName='CN', channel='Dexters Laboratory Pro'}
+CartoonDTO{id=107, showName='CN', channel='Tom and Jerry Pro'}
+CartoonDTO{id=108, showName='POGO', channel='Looney Tunes Pro'}
+CartoonDTO{id=109, showName='CN', channel='The Powerpuff Girls Pro'}
+CartoonDTO{id=110, showName='CN', channel='Samurai Jack Pro'}
+CartoonDTO{id=111, showName='CN', channel='Pokémon Pro'}
+CartoonDTO{id=112, showName='CN', channel='Popeye the Sailor Pro'}
+CartoonDTO{id=113, showName='HUNGAMA', channel='Doraemon Pro'}
+CartoonDTO{id=114, showName='HUNGAMA', channel='Shin-chan Pro'}
+CartoonDTO{id=115, showName='CN', channel='Captain Planet and the Planeteers Pro'}
+CartoonDTO{id=116, showName='CN', channel='Ed Edd n Eddy Pro'}
+CartoonDTO{id=117, showName='CN', channel='The Addams Family Pro'}
+CartoonDTO{id=118, showName='CN', channel='The Jetsons Pro'}
+CartoonDTO{id=119, showName='CN', channel='The Mask Pro'}
+CartoonDTO{id=120, showName='CN', channel='Ben 10 Pro'}
