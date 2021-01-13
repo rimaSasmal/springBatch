@@ -63,25 +63,27 @@ public class JobClass {
 
     @Bean
     @StepScope
-    public FlatFileItemReader<CartoonDTO> employeeReader() throws Exception {
-        FlatFileItemReader<CartoonDTO> reader = new FlatFileItemReader<>();
-        reader.setResource(inputFileResource(null));
-        reader.setLineMapper(new DefaultLineMapper<CartoonDTO>() {{
-            setLineTokenizer(new DelimitedLineTokenizer() {{
-                setNames("id","showName","channel");
-                setDelimiter(",");
-            }});
-            setFieldSetMapper(new CartoonFileRowMapper());
-        }});
+    public ItemReader<CartoonDTO> employeeReader() throws Exception {
+//         FlatFileItemReader<CartoonDTO> reader = new FlatFileItemReader<>();
+//         reader.setResource(inputFileResource(null));
+//         reader.setLineMapper(new DefaultLineMapper<CartoonDTO>() {{
+//             setLineTokenizer(new DelimitedLineTokenizer() {{
+//                 setNames("id","showName","channel");
+//                 setDelimiter(",");
+//             }});
+//             setFieldSetMapper(new CartoonFileRowMapper());
+//         }});
+        ItemReader<CartoonDTO> reader=null;
         return reader;
     }
 
     @Bean
-    public JdbcBatchItemWriter<Cartoon> cartoonDBWriter() {
-        JdbcBatchItemWriter<Cartoon> itemWriter = new JdbcBatchItemWriter<>();
-        itemWriter.setDataSource(dataSource);
-        itemWriter.setSql("insert into Cartoon values (:id, :showName, :channel)");
-        itemWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>());
+    public ItemWriter<Cartoon> cartoonDBWriter() {
+//         JdbcBatchItemWriter<Cartoon> itemWriter = new JdbcBatchItemWriter<>();
+//         itemWriter.setDataSource(dataSource);
+//         itemWriter.setSql("insert into Cartoon values (:id, :showName, :channel)");
+//         itemWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>());
+        ItemWriter<Cartoon> writer=null;
         return itemWriter;
     }
 }
