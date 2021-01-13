@@ -12,6 +12,8 @@ import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider;
 import org.springframework.batch.item.database.JdbcBatchItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
+import org.springframework.batch.item.ItemWriter;
+import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,26 +66,13 @@ public class JobClass {
     @Bean
     @StepScope
     public ItemReader<CartoonDTO> employeeReader() throws Exception {
-//         FlatFileItemReader<CartoonDTO> reader = new FlatFileItemReader<>();
-//         reader.setResource(inputFileResource(null));
-//         reader.setLineMapper(new DefaultLineMapper<CartoonDTO>() {{
-//             setLineTokenizer(new DelimitedLineTokenizer() {{
-//                 setNames("id","showName","channel");
-//                 setDelimiter(",");
-//             }});
-//             setFieldSetMapper(new CartoonFileRowMapper());
-//         }});
         ItemReader<CartoonDTO> reader=null;
         return reader;
     }
 
     @Bean
     public ItemWriter<Cartoon> cartoonDBWriter() {
-//         JdbcBatchItemWriter<Cartoon> itemWriter = new JdbcBatchItemWriter<>();
-//         itemWriter.setDataSource(dataSource);
-//         itemWriter.setSql("insert into Cartoon values (:id, :showName, :channel)");
-//         itemWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>());
         ItemWriter<Cartoon> writer=null;
-        return itemWriter;
+        return writer;
     }
 }
